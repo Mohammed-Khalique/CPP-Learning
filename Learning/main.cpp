@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int add(int a, int b);
+int multiply(int a, int b);
 
 int main()
 {
@@ -16,15 +16,19 @@ int main()
     cin >> secondNumber;
     cout << "You entered " << secondNumber << endl;
 
-    cout << "Apparently the calculation two adding them is " << add(firstNumber, secondNumber) << endl;
+    cout << "Apparently the calculation of multiplying them is " << multiply(firstNumber, secondNumber) << endl;
 
     return 0;
 }
 
-
+int multiply(int a, int b){
+    return a * b;
+}
 
 int add(int a, int b){
     return a + b;
 }
 
-
+int subtract(int a, int b){
+    return a - b;
+}
