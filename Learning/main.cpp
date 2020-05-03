@@ -1,25 +1,14 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 
-
-
+void hello(string name, int age);
 int main()
 {
-string colour, noun, thing;
-
-cout << "enter a colour: ";
-getline(cin, colour);
-cout << "enter a noun: ";
-getline(cin, noun);
-cout << "enter a thing: ";
-getline(cin, thing);
-
-cout << "-------------------" << endl;
-
-cout << "roses are " << colour << endl;
-cout << noun << " are blue" << endl;
-cout << "I love " << thing << endl;
+hello("bob", 69);
+hello("ross", 46);
+hello("dan", 18);
     return 0;
 }
-
+void hello(string name, int age){
+cout << "hello " << name << " are you "<< age<<"?" << endl;}
