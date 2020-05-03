@@ -2,33 +2,24 @@
 
 using namespace std;
 
-int subtract(int a, int b);
+
 
 int main()
 {
+string colour, noun, thing;
 
-    int firstNumber, secondNumber;
-    cout << "Enter a number: " << endl;
-    cin >> firstNumber;
-    cout << "You entered: " << firstNumber << endl;
+cout << "enter a colour: ";
+getline(cin, colour);
+cout << "enter a noun: ";
+getline(cin, noun);
+cout << "enter a thing: ";
+getline(cin, thing);
 
-    cout << "Enter a second number: " << endl;
-    cin >> secondNumber;
-    cout << "You entered " << secondNumber << endl;
+cout << "-------------------" << endl;
 
-    cout << "Apparently the calculation of multiplying them is " << subtract(firstNumber, secondNumber) << endl;
-
+cout << "roses are " << colour << endl;
+cout << noun << " are blue" << endl;
+cout << "I love " << thing << endl;
     return 0;
 }
 
-int multiply(int a, int b){
-    return a * b;
-}
-
-int add(int a, int b){
-    return a + b;
-}
-
-int subtract(int a, int b){
-    return a - b;
-}
