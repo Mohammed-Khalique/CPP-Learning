@@ -3,13 +3,22 @@
 using namespace std;
 
 
-double cube(double num){
-return + num * num * num;
-cout << "this line will not be printed";
-}
+
 int main()
 {
- cout << cube(2.4);
+bool ismale = false;
+bool istall = true;
+
+    if(ismale && istall)
+    {cout << "you are a tall male";}
+    else if (ismale)
+    {cout << "you are a small male";}
+    else if (istall)
+    {cout << "you are not male but tall";}
+    else
+    {cout << "you are not male or tall";}
+
+
     return 0;
 }
 
