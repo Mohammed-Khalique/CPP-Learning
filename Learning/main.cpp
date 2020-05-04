@@ -2,13 +2,14 @@
 #include <cmath>
 using namespace std;
 
-void hello(string name, int age);
+
+double cube(double num){
+return + num * num * num;
+cout << "this line will not be printed";
+}
 int main()
 {
-hello("bob", 69);
-hello("ross", 46);
-hello("dan", 18);
+ cout << cube(2.4);
     return 0;
 }
-void hello(string name, int age){
-cout << "hello " << name << " are you "<< age<<"?" << endl;}
+
