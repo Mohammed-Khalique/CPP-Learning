@@ -2,22 +2,17 @@
 #include <cmath>
 using namespace std;
 
-
+int nums(int num1, int num2, int num3){
+    int result;
+    if(num1 >= num2 && num1 >= num3){result = num1;}
+    else if(num2 >= num1 && num2 >= num3){result = num2;}
+    else{result = num3;}
+    return result;
+    }
 
 int main()
 {
-bool ismale = false;
-bool istall = true;
-
-    if(ismale && istall)
-    {cout << "you are a tall male";}
-    else if (ismale)
-    {cout << "you are a small male";}
-    else if (istall)
-    {cout << "you are not male but tall";}
-    else
-    {cout << "you are not male or tall";}
-
+    cout << nums(11, 64, 69);
 
     return 0;
 }
