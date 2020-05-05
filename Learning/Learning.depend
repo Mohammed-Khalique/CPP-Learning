@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
-1588528712 source:o:\githubprojects\cpp-learning\learning\main.cpp
+1588724265 source:o:\githubprojects\cpp-learning\learning\main.cpp
 	<iostream>
+	<cmath>
 

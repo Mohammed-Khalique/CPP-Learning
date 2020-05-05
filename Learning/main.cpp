@@ -2,18 +2,25 @@
 #include <cmath>
 using namespace std;
 
-int nums(int num1, int num2, int num3){
-    int result;
-    if(num1 >= num2 && num1 >= num3){result = num1;}
-    else if(num2 >= num1 && num2 >= num3){result = num2;}
-    else{result = num3;}
-    return result;
-    }
-
 int main()
 {
-    cout << nums(11, 64, 69);
+    double num1, num2;
+    char op;
 
-    return 0;
+
+     cout << "Enter First Number: ";
+     cin >> num1;
+     cout << "Enter Operator: ";
+     cin >> op;
+     cout << "Enter Second Number: ";
+     cin >> num2;
+     double result;
+     if(op == '+'){result = num1 + num2;}
+else if(op == '-'){result = num1 - num2;}
+else if(op == '*'){result = num1 * num2;}
+else if(op == '/'){result = num1 / num2;}
+     else{cout << "invalid operator";}
+     cout << "This Equals " << result;
+   return 0;
 }
 
