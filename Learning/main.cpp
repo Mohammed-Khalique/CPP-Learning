@@ -2,25 +2,25 @@
 #include <cmath>
 using namespace std;
 
+
+string dayofweek(int daynum){
+string dayname;
+switch(daynum){
+case 0: dayname = "Sunday"; break;
+case 1: dayname = "Monday"; break;
+case 2: dayname = "Tuesday"; break;
+case 3: dayname = "Wednesday"; break;
+case 4: dayname = "Thursday"; break;
+case 5: dayname = "Friday"; break;
+case 6: dayname = "Saturday"; break;
+default: dayname = "Invalid day number";
+}
+   return dayname;
+}
 int main()
 {
-    double num1, num2;
-    char op;
+cout << dayofweek(0);
 
-
-     cout << "Enter First Number: ";
-     cin >> num1;
-     cout << "Enter Operator: ";
-     cin >> op;
-     cout << "Enter Second Number: ";
-     cin >> num2;
-     double result;
-     if(op == '+'){result = num1 + num2;}
-else if(op == '-'){result = num1 - num2;}
-else if(op == '*'){result = num1 * num2;}
-else if(op == '/'){result = num1 / num2;}
-     else{cout << "invalid operator";}
-     cout << "This Equals " << result;
    return 0;
 }
 
