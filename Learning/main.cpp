@@ -6,24 +6,9 @@ using namespace std;
 
 int main()
 {
-    cout <<"Pick A Number Between 1-100\n--------------"<< endl;
-    int secretnum = 69;
-    int guess;
-    int guesscount = 0;
-    int guesslimit = 5;
-
-    bool outofguesses = false;
-
-    while(secretnum != guess && !outofguesses){
-    if(guesscount < guesslimit)
-    {cout << "Enter A Number: ";
-    cin >> guess;
-    guesscount++;}
-    else{outofguesses = true;}
-    }
-    if(outofguesses)
-    {cout << " \nYou Lose";}
-    else{cout << " \nYou Win";}
+    int nums[] = {46, 69, 360, 82, 419};
+    for(int i = 0; i < 5; i++)
+    {cout << nums[i] << endl;}
 
    return 0;
 }
