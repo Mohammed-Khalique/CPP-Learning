@@ -5,49 +5,52 @@
 #include<stdlib.h>
 
 using namespace std;
-bool GameOver;
-const int width = 20;
-const int height = 20;
-int x, y, fruitX, fruitY, score;
-enum eDirection {Stop = 0, Left, Right, Up, Down};
-eDirection dir;
-void setup(){
-    GameOver = false;
-    dir = Stop;
-    x = width / 2;
-    y = height / 2;
-    fruitX = rand() % width;
-    fruitY = rand() % width;
-    score = 0;
-}
-void Draw(){
-    system("cls");
-    for (int i = 0; i < width+2; i++)
-        cout << "#";
-    cout << endl;
-
-    for(int i = 0; i < height; i++){
-        for(int j = 0; j < width; j++){
-            if(j == 0)
-                cout << "#";
-                cout << " ";
-            if(j == width - 1)
-                cout << "#";
-        }
-        cout << endl;
-    }
-}
-//for (int i = 0; i < width+2; i++)
-      //  cout << "#";
-    //cout << endl;
 
 int main()
 {
-    setup(); while (!GameOver){
-        Draw();
-        Input();
-        logic();
+    int gd,gm,x=200,y=200,d=1,dir=1;
+    detectgraph(&gd,&gm);
+    initgraph(&gd,&gm,"");
+    delay(2000);
+    srand(time(NUll));
+    setfillstyle(1,2);
+
+    for(;;){
+        setfillstyle(1,0);
+        bar(0,0,640,480);
+        setfillstyle(1,2);
+        bar(0,0,640,10);
+        bar(0,0,10,480);
+        bar(0,480,640,470);
+        bar(630,10,640,480);
+
+        if(GetAnyKeyState(VK_RIGHT)){d=1;}
+        else if(GetAnyKeyState(VK_LEFT)){d=2;}
+        else if(GetAnyKeyState(VK_UP)){d=3;}
+        else if(GetAnyKeyState(VK_DOWN)){d=4;}
+        else {d=0;}
+        switch(d){
+        case 0:
+            if(dir==1){x=x+10;}
+            else if (dir==2){x=x-10;}
+            else if (dir==3){y=y-10;}
+            else if (dir==4){y=y+10}
+            else {d=0;}
+            break;
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+
+
+
+
+        }
+
+        bar(x,y,x+10,y+10);
+
 
     }
+
     return 0;
 }
