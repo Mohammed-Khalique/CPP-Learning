@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1589905935 source:o:\githubprojects\cpp-learning\learning\.b\main.cpp
+1590006252 source:o:\githubprojects\cpp-learning\learning\.b\main.cpp
 	<iostream>
 	<string>
+	<algorithm>
+	<cctype>
 
